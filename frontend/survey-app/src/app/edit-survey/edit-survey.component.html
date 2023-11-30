@@ -1,0 +1,180 @@
+<!-- Created By:
+Pradeep Ranjan G01373552 
+Pranav Agrawal G01394901
+Srikar Pratap Susarla G01329585-->
+
+<body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <br>
+          <br>
+          <br>  
+          
+          <br>
+          <br>
+          <br>
+          <h5></h5>
+          
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <form (ngSubmit)="onSubmit()" #form="ngForm">
+                <!-- Succes Message -->
+                <h2>Edit Survey Form</h2>
+                <!-- Personal Details -->
+                <div class="form-group">
+                  <label for="firstName">First Name:<span class="required">*</span></label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Enter first name"
+                    [(ngModel)]="survey.firstName" name="firstName" autofocus required>
+                </div>
+  
+                <div class="form-group">
+                  <label for="lastName">Last Name:<span class="required">*</span></label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Enter last name"
+                    [(ngModel)]="survey.lastName" name="lastName" required>
+                </div>
+  
+                <div class="form-group">
+                  <label for="street">Street Addres:<span class="required">*</span></label>
+                  <input type="text" class="form-control" id="street" placeholder="Enter Street Address"
+                    [(ngModel)]="survey.street" name="street" required>
+                </div>
+  
+                <div class="form-group">
+                  <label for="cityname">City name:<span class="required">*</span></label>
+                  <input type="text" class="form-control" id="cityname" placeholder="Enter City name"
+                    [(ngModel)]="survey.cityname" name="cityname" required>
+                </div>
+  
+                <div class="form-group">
+                  <label for="statename">Statename:<span class="required">*</span></label>
+                  <input type="text" class="form-control" id="statename" placeholder="Enter State name"
+                    [(ngModel)]="survey.statename" name="statename" required>
+                </div>
+  
+                <div class="form-group">
+                  <label for="zipCode">ZipCode:<span class="required">*</span></label>
+                  <input type="text" class="form-control" id="zipCode" placeholder="Enter ZipCode"
+                    [(ngModel)]="survey.zipCode" name="zipCode" required>
+                </div>
+  
+                <div class="form-group">
+                  <label for="telephone">Telephone:<span class="required">*</span></label>
+                  <input type="text" class="form-control" id="telephone" placeholder="Telephone"
+                    [(ngModel)]="survey.telephone" name="telephone" required>
+                </div>
+  
+                <div class="form-group">
+                  <label for="email">Email:<span class="required">*</span></label>
+                  <input type="text" class="form-control" id="email" placeholder="Email" [(ngModel)]="survey.email"
+                    name="email" required>
+                </div>
+  
+                <div class="form-group">
+                  <label for="dateofsurvey">Date Of Survey:<span class="required">*</span></label>
+                  <input type="text" class="form-control" id="dateofsurvey" placeholder="Date Of Survey"
+                    [(ngModel)]="survey.dateofsurvey" name="dateofsurvey" required>
+                </div>
+  
+                <!-- What did you like most about the campus? -->
+                <div class="form-group">
+                  <label>What did you like most about the campus?</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="studentsCheck" [(ngModel)]="survey.students" name="students">
+                    <label class="form-check-label" for="studentsCheck">Students</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="locationCheck" [(ngModel)]="survey.location"
+                      name="location">
+                    <label class="form-check-label" for="locationCheck">Location</label>
+                  </div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="campusCheck" [(ngModel)]="survey.campus"
+                      name="campus">
+                    <label class="form-check-label" for="campusCheck">Campus</label>
+                  </div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="atmosphereCheck" [(ngModel)]="survey.atmosphere"
+                      name="atmosphere">
+                    <label class="form-check-label" for="atmosphereCheck">Atmosphere</label>
+                  </div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="dormsCheck" [(ngModel)]="survey.dorms"
+                      name="dorms">
+                    <label class="form-check-label" for="dormsCheck">Dorm Rooms</label>
+                  </div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="sportsCheck" [(ngModel)]="survey.sports"
+                      name="sports">
+                    <label class="form-check-label" for="sportsCheck">Sports</label>
+                  </div>
+                </div>
+  
+                <!-- How did you hear about the university? -->
+                <div class="form-group">
+                  <label>How did you hear about the university?</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="hearAboutUniversity" id="friendsRadio"
+                    [(ngModel)]="survey.hearAboutUniversity" value="friends">
+                  <label class="form-check-label" for="friendsRadio">Friends</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="hearAboutUniversity" id="tvRadio"
+                      [(ngModel)]="survey.hearAboutUniversity" value="tv">
+                    <label class="form-check-label" for="tvRadio">Television</label>
+                  </div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="hearAboutUniversity" id="internetRadio"
+                      [(ngModel)]="survey.hearAboutUniversity" value="internet">
+                    <label class="form-check-label" for="internetRadio">Internet</label>
+                  </div>
+  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="hearAboutUniversity" id="otherRadio"
+                      [(ngModel)]="survey.hearAboutUniversity" value="other">
+                    <label class="form-check-label" for="otherRadio">Other</label>
+                  </div>
+                </div>
+  
+                <!-- Likelihood of recommending the school -->
+                <div class="form-group">
+                  <label for="recommendation">Would you recommend our university to a friend?</label>
+                  <select class="form-control" id="recommendation" name="recommendation"
+                    [(ngModel)]="survey.recommendation">
+                    <option>Very Likely</option>
+                    <option>Likely</option>
+                    <option>Unlikely</option>
+                  </select>
+                </div>
+  
+                <!-- Additional comments -->
+                <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea class="form-control" id="comments" rows="3" name="comments"
+                    [(ngModel)]="survey.comments"></textarea>
+                </div>
+  
+                <!-- Submit and Cancel buttons -->
+                <br>
+                <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Submit</button>
+                <button type="reset" class="btn btn-secondary">Cancel</button>
+              </form>
+            </div>
+          </div>
+        </div>
+  
+  
+      </div>
+  
+  
+  
+    </div>
+  
+  </body>

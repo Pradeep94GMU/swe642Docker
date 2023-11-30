@@ -1,0 +1,65 @@
+/* Created By:
+Pradeep Ranjan G01373552 
+Pranav Agrawal G01394901
+Srikar Pratap Susarla G01329585
+*/
+
+#navMain.navbar {
+  background-color: #FFDB58 !important; 
+}
+  
+#navMain .nav-link {
+  color: #046A38 !important; 
+}
+  
+.nav-item:hover{
+  background-color: #046A38;
+
+}
+  
+.active {
+  font-weight: bold;
+  
+}
+  
+#navMain .nav-item.active-link .nav-link {
+  color: #FFDB58 !important; 
+  background-color: #046A38; 
+  font-weight: bold; 
+}
+  
+#navMain .nav-item:hover .nav-link {
+  color: #FFDB58 !important;
+  font-weight: bold; 
+}
+  
+#navMain .nav-item.active-link:hover .nav-link {
+  color: #FFDB58 !important; 
+}
+  
+.navbar-brand{
+  font-size: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+  
+html {
+  height: 100%; 
+}
+    
+body { 
+  margin: 0; 
+  height: 100%; 
+  font-family: Arial, sans-serif;
+  position: relative; 
+  overflow: hidden; 
+}
+  
+.content {
+  position: relative;
+  z-index: 1;
+}
+    
+  
+  
+  

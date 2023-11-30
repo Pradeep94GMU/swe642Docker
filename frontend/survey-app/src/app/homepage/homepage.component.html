@@ -1,0 +1,41 @@
+<!-- Created By:
+Pradeep Ranjan G01373552 
+Pranav Agrawal G01394901
+Srikar Pratap Susarla G01329585-->
+<div style="text-align: center;">
+  <img src="./assets/logo.png" alt="gmu logo" style="width: 18%; height: auto;">
+</div>
+<div class="header">Student Survey <span id="fpage">FEEDBACK PAGE</span> </div>
+
+<div class="description">
+    <p>"This website allows prospective students to give feedback about their campus visit. The students can fill out a survey sharing what they liked and how the school could improve. The university uses this information to make campus tours better for future students who visit.."</p>
+    
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-md-6">
+      <div class="card">
+          <div class="card-body"> 
+            <h2 class="card-title">Top Feedback</h2>
+            <table class="table table-striped custom-table">
+                <thead >
+                    <tr >
+                      <th>Name</th>
+                      <th>Feedback</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let survey of surveys">
+                      <td>{{ survey.firstName }} {{ survey.lastName }}</td>
+                      <td>{{ survey.comments }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+        </div>
+    </div>
+</div>
+  
+
+
+

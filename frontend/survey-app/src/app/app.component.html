@@ -1,0 +1,30 @@
+<!-- Created By:
+Pradeep Ranjan G01373552 
+Pranav Agrawal G01394901
+Srikar Pratap Susarla G01329585-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navMain">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+        <a class="nav-link" routerLink="/">Homepage</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active-link">
+        <a class="nav-link" routerLink="/student-survey">Student Survey</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active-link">
+        <a class="nav-link" routerLink="/list-surveys">List All Surveys</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active-link">
+        <a class="nav-link" routerLink="/app-contact-us">Contact-Us</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+<!-- Router Outlet -->
+<router-outlet></router-outlet>
